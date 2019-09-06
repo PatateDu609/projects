@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "git/Includes"
+		},
+		{
+			"path": "git/Libs"
+		},
+		{
+			"path": "git/projects"
+		},
+		{
+			"path": "git/.scripts"
+		}
+	]
+}

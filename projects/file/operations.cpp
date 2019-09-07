@@ -29,4 +29,19 @@ bool	File::close()
 	return (true);
 }
 
+
+bool	File::seek(off_t pos, SeekMode mode)
+{
+	off_t result, old = lseek(_fd, 0, SEEK_CUR);
+	if (mode == CB)
+		result = lseek(_fd, old - pos, SEEK_SET);
+	else if (mode == EF)
+		result = lseek(_fd, lseek(_fd, 0, mode) - pos, SEEK_SET);
+	else
+		result = lseek(_fd, pos, mode);
+	return (result - old != pos);
+}
+
+
+
 #endif

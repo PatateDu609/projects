@@ -23,6 +23,14 @@ enum WRMode
 	SEPARATOR
 };
 
+enum SeekMode
+{
+	EF = SEEK_END,
+	SF = SEEK_SET,
+	CF = SEEK_CUR,
+	CB = 3
+};
+
 class File
 {
 public:
@@ -35,9 +43,9 @@ public:
 	// defined in operations.cpp
 	bool					open(mode_t mode = 0644);
 	bool					close();
-	bool					seek();
+	bool					seek(off_t pos = 0, SeekMode mode = CF);
 	bool					copy(const File& other);
-	char					read();
+	void					read(void *target);
 
 	// defined in access.cpp
 	char					*getline();

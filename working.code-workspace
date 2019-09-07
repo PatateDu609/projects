@@ -12,5 +12,11 @@
 		{
 			"path": "git/.scripts"
 		}
-	]
+	],
+	"settings": {
+		"files.associations": {
+			"ostream": "cpp",
+			"unistd.h": "c"
+		}
+	}
 }

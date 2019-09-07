@@ -4,7 +4,7 @@ LIBS		= -lfile
 OBJS		= ${SRCS:.cpp=.o}
 CC			= g++
 CFLAGS		= -Wall -Werror -Wextra -fPIC -Wno-write-strings
-NAME		= /home/teyber/Libs/libfile.so
+NAME		= /home/teyber/git/Libs/libfile.so
 RM			= rm -f
 INC_PATH	:= $(shell echo ${NAME} | sed -E "s/Libs/Includes/" | sed -E "s/(lib|.so)//g")
 

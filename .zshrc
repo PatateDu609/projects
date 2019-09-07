@@ -98,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias begin="~/.scripts/begin.sh"
-export INCLUDES="/home/teyber/Includes"
-export LD_LIBRARY_PATH="/home/teyber/Libs"
+alias begin="~/git/.scripts/begin.sh"
+export INCLUDES="/home/teyber/git/Includes"
+export LD_LIBRARY_PATH="/home/teyber/git/Libs"
 export PAGER="most"

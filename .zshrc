@@ -99,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias begin="~/git/.scripts/begin.sh"
+alias commit="~/git/.scripts/commit.sh"
 export INCLUDES="/home/teyber/git/Includes"
 export LD_LIBRARY_PATH="/home/teyber/git/Libs"
 export PAGER="most"
+git config --global credential.helper 'store --file /home/teyber/.git-credentials'
+/home/teyber/git/.scripts/autopush.sh &

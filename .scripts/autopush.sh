@@ -8,7 +8,7 @@ while read -r filename; do
 		continue
 	fi
 	git add $filename
-	git commit -m "$filename"
+	git commit -m "$filename" > 
 	git push origin master
 	bg
 done

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-inotifywait -m -r --event=modify,move,create --exclude /home/teyber/git/.git --format %w%f /home/teyber/git/ | 
+inotifywait -m -r --event=modify,move,create --exclude /home/teyber/git/.git --format %w%f /home/teyber/git | 
 while read -r filename; do
 	git check-ignore $filename
 	if [ $? -eq 0 ]; then

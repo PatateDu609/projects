@@ -10,4 +10,5 @@ while read -r filename; do
 	git add $filename
 	git commit -m "$filename"
 	git push origin master
+	bg
 done

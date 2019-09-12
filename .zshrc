@@ -104,4 +104,4 @@ export INCLUDES="/home/teyber/git/Includes"
 export LD_LIBRARY_PATH="/home/teyber/git/Libs"
 export PAGER="most"
 git config --global credential.helper 'store --file /home/teyber/.git-credentials'
-/home/teyber/git/.scripts/autopush.sh > /dev/null &
+alias autopush="/home/teyber/git/.scripts/autopush.sh > /dev/null &"

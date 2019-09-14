@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ~/projects
+cd ~/git/projects
 
 # Please use the f option carefully... It will erase your work...
 
@@ -16,7 +16,7 @@ if [ $? -eq 0 ]; then
 
 	if [ $1 = "library" ] || [ $1 = "class" ]; then
 		# Basic specialization of the Makefile
-		cp ~/.scripts/Makefile_libs.template ./Makefile
+		cp ~/git/.scripts/Makefile_libs.template ./Makefile
 		sed -Ei "s|NAME(\t*)= |NAME\1= $LD_LIBRARY_PATH/lib$2.so|" Makefile
 		sed -Ei "s|LIBS(\t*)= |LIBS\1= -l$2|" Makefile
 

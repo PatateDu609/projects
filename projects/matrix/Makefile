@@ -23,7 +23,7 @@ fclean:		clean
 		${RM} -r ${NAME} $(INCLUDES)/${INCLUDE} ${INC_PATH}
 
 test:		${NAME}
-		${CC} -o test main.cpp -L$(LD_LIBRARY_PATH) ${LIBS} -I$(INCLUDES) -Wno-write-strings
+		${CC} -o test main.cpp -L$(LD_LIBRARY_PATH) ${LIBS} -I$(INCLUDES) -Wno-write-strings -fsanitize=address -fsanitize=leak
 
 install:
 		mkdir ${INC_PATH}

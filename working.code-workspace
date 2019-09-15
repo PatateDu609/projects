@@ -16,7 +16,8 @@
 	"settings": {
 		"files.associations": {
 			"ostream": "cpp",
-			"unistd.h": "c"
+			"unistd.h": "c",
+			"iosfwd": "cpp"
 		}
 	}
 }
